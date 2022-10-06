@@ -17,11 +17,8 @@ namespace AfakProject.Controllers
         }
 
 
-        //Http Post Method
         [HttpPost]
-        //Don't need auth
         [AllowAnonymous]
-        //Route or final endpoint name.
         [Route("Register")]
         public async Task<IActionResult> Register([FromBody] AddUserDto userDto)
         {
@@ -41,11 +38,9 @@ namespace AfakProject.Controllers
             }
         }
 
-        //Http GET Method
+       
         [HttpGet]
-        //Don't need auth
         [AllowAnonymous]
-        //Route or final endpoint name.
         [Route("List")]
         public async Task<IActionResult> List()
         {
